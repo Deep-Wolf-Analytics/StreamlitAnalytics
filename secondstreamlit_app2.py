@@ -34,7 +34,7 @@ with st.sidebar.header('1. Upload weekly CSV data'):
 [Example CSV input file](https://raw.githubusercontent.com/dataprofessor/data/master/delaney_solubility_with_descriptors.csv)
 """)
     dataset = pd.read_csv(uploaded_file)
-    dataset = pd.read_csv(r"C:\Users\seanh\Downloads\HistorianData_DenaLiC_Extraction (11).csv")
+   # dataset = pd.read_csv(r"C:\Users\seanh\Downloads\HistorianData_DenaLiC_Extraction (11).csv")
     dataset['t_stamp'] = pd.to_datetime(dataset['t_stamp'])
    # dataset.set_index('t_stamp')
 
